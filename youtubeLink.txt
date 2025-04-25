@@ -1,3 +1,10 @@
-https://www.youtube.com/watch?v=NemyDIUcC64&list=PLjC4UKOOcfDSA06HsjJK4ZBr1tnPaOOpq
+=> https://www.youtube.com/watch?v=NemyDIUcC64&list=PLjC4UKOOcfDSA06HsjJK4ZBr1tnPaOOpq
 
 time update: 5:49
+
+=> Add-Migration "InitialCreate" from video didn't work   10:05
+used below codes
+dotnet tool install --global dotnet-ef
+dotnet ef migrations add InitialCreate
+
+
