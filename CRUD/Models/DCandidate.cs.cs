@@ -12,18 +12,17 @@ namespace CRUD.Models
         public string fullName { get; set; }
 
         [Column(TypeName = "nvarchar(100)")]
-        public int mobile { get; set; }
+        public string mobile { get; set; }
 
         [Column(TypeName = "nvarchar(100)")]
-        public int email { get; set; }
+        public string email { get; set; }
 
-        [Column(TypeName = "nvarchar(100)")]
         public int age { get; set; }
 
         [Column(TypeName = "nvarchar(100)")]
-        public int bloodGroup { get; set; }
+        public string bloodGroup { get; set; }
 
         [Column(TypeName = "nvarchar(100)")]
-        public int address { get; set; }
+        public string address { get; set; }
     }
 }

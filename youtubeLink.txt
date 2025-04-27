@@ -1,10 +1,28 @@
 => https://www.youtube.com/watch?v=NemyDIUcC64&list=PLjC4UKOOcfDSA06HsjJK4ZBr1tnPaOOpq
 
-time update: 5:49
+=> I stoped this as this project needs redux knowledge I don't know much redux
+
+time update: 39:40
 
 => Add-Migration "InitialCreate" from video didn't work   10:05
 used below codes
 dotnet tool install --global dotnet-ef
 dotnet ef migrations add InitialCreate
+dotnet ef database update
 
+=> error: Microsoft.Data.SqlClient.SqlException (0x80131904): A connection was successfully established with the server, 
+but then an error occurred during the login process. (provider: SSL Provider, error: 0 - 
+The certificate chain was issued by an authority that is not trusted.)
 
+solved using below connection string from chatgpt
+"DevConnection": "Server =(local)\\sqlexpress; Database=DonationDB; Trusted_Connection=True; 
+MultipleActiveResultSets=True;TrustServerCertificate=True;Encrypt=True"
+
+after above code 
+dotnet ef database update
+db is created 
+
+=> use postman online to reduce localstorage
+
+=> npx create-react-app react-app
+npm start
