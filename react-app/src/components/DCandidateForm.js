@@ -1,5 +1,5 @@
 const DCandidateForm = (props) => {
-    return ( <div>form DCandidateForm</div>);
+    return ( <div>from DCandidateForm</div>);
 }
 
 export default DCandidateForm;

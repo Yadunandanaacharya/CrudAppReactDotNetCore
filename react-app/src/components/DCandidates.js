@@ -1,7 +1,7 @@
 import React from "react";
 
 const DCandidates = (props) => {
-    return ( <div>form DCandidates</div>);
+    return ( <div>from DCandidates</div>);
 }
 
-export default DCandidates;
+export default connect() (DCandidates);
